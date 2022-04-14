@@ -49,13 +49,9 @@ private fun printBoard(cols: Int, rows: Int, chCol: Int) {
 
     for (i in 1..rows) {
         for (j in 1..cols + 1) {
-            if (chCol == 0) {
-                print("| ")
-                if (j == cols + 1) {
-                    println("")
-                }
-            } else {
-
+            print("| ")
+            if (j == cols + 1) {
+                println("")
             }
         }
     }
@@ -63,6 +59,9 @@ private fun printBoard(cols: Int, rows: Int, chCol: Int) {
         print("==")
         if (i == cols) {
             print("=")
+            if (i == cols) {
+                println("")
+            }
         }
     }
 }
