@@ -222,5 +222,4 @@ fun getStatusSize(letter: String): Int {
 
     }
     return ancho2
-
 }
