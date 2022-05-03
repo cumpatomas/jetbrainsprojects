@@ -9,10 +9,10 @@ fun main() {
     println("Enter person's status: ")
     val status = readln()!!
 
-    var nameSplit = name.split("").toMutableList()
+    val nameSplit = name.split("").toMutableList()
     nameSplit.removeAt(0)
     nameSplit.removeLast()
-    var statusSplit = status.split("").toMutableList()
+    val statusSplit = status.split("").toMutableList()
     statusSplit.removeAt(0)
     statusSplit.removeLast()
     var ancho = 10 // for the whitespace in between
